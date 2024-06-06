@@ -7,7 +7,8 @@ function M.setup()
         build = {
           executable = "latexmk",
           args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" },
-          onSave = true  -- Automatically build on save
+          onSave = true,  -- Automatically build on save
+          forwardSearchAfter = true
         },
         forwardSearch = {
           executable = "zathura",  -- Replace with your preferred PDF viewer

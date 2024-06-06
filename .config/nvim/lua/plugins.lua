@@ -3,11 +3,6 @@ return {
         'neovim/nvim-lspconfig',
         config = function()
             require('plugins.lsp.latex').setup()
-        end
-    },
-    {
-        'neovim/nvim-lspconfig',
-        config = function()
             require('plugins.lsp.rust').setup()
         end
     },
