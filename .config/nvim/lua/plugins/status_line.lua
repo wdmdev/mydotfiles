@@ -10,17 +10,17 @@ return {
         -- Color table for highlights
         -- stylua: ignore
         local colors = {
-          bg       = '#282A36',
-          fg       = '#F8F8F2',
-          yellow   = '#F1FA8C',
-          cyan     = '#8BE9FD',
-          darkblue = '#6272A4',
-          green    = '#50FA7B',
-          orange   = '#FFB86C',
-          purple   = '#BD93F9',
-          pink     = '#FF79C6',
-          darkgrey = '#44475A',
-          red      = '#FF5555',
+          bg       = '#1e1e2e',
+          fg       = '#7f849c',
+          yellow   = '#f9e2af',
+          cyan     = '#89dceb',
+          darkblue = '#89b4fa',
+          green    = '#a6e3a1',
+          orange   = '#fab387',
+          mauve   = '#cba6f7',
+          pink     = '#fac2e7',
+          darkgrey = '#a6adc8',
+          red      = '#f38ba8',
         }
         
         local conditions = {
@@ -109,8 +109,8 @@ return {
               S = colors.orange,
               ['␓'] = colors.orange,
               ic = colors.yellow,
-              R = colors.purple,
-              Rv = colors.purple,
+              R = colors.mauve,
+              Rv = colors.mauve,
               cv = colors.red,
               ce = colors.red,
               r = colors.cyan,
@@ -198,7 +198,7 @@ return {
         ins_right {
           'branch',
           icon = '',
-          color = { fg = colors.purple, gui = 'bold' },
+          color = { fg = colors.mauve, gui = 'bold' },
         }
         
         ins_right {
