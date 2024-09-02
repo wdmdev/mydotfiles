@@ -3,3 +3,6 @@ if status is-interactive
 end
 
 starship init fish | source
+
+alias config='/usr/bin/git --git-dir="$HOME/.config/" --work-tree="$HOME"'
+
