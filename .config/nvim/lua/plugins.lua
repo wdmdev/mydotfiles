@@ -4,6 +4,7 @@ return {
         config = function()
             require('plugins.lsp.latex').setup()
             require('plugins.lsp.rust').setup()
+            require('plugins.lsp.python').setup()
         end
     },
     {

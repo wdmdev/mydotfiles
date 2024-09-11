@@ -215,3 +215,5 @@ for_window [class=".*"] border none
 # Start picom compositor
 exec --no-startup-id picom -b
 
+# Activate Keybindings
+exec --no-startup-id xbindkeys
