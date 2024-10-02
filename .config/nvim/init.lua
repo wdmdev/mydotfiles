@@ -27,3 +27,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup('plugins')
+
+local spellcheck = require('spellcheck')
+vim.api.nvim_set_keymap('n', '<space>sl', ':lua require("spellcheck").toggle_spell_lang()<CR>', { noremap = true, silent = true })
