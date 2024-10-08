@@ -83,6 +83,12 @@ return {
         end
         
         ins_left {
+          'branch',
+          icon = '',
+          color = { fg = colors.mauve, gui = 'bold' },
+        }
+
+        ins_left {
           function()
             return '▊'
           end,
@@ -179,6 +185,19 @@ return {
           icon = ' LSP:',
           color = { fg = '#ffffff', gui = 'bold' },
         }
+
+        ins_right {
+            function()
+              local venv = os.getenv('VIRTUAL_ENV')
+              if venv then
+                -- Extract the last part of the path, which is usually the name of the venv
+                return ' ' .. venv:match("([^/]+)$")
+              else
+                return '' -- No virtual environment is active
+              end
+            end,
+            color = { fg = colors.green, gui = 'bold' },
+        }
         
         -- Add components to right sections
         ins_right {
@@ -193,12 +212,6 @@ return {
           fmt = string.upper,
           icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
           color = { fg = colors.green, gui = 'bold' },
-        }
-        
-        ins_right {
-          'branch',
-          icon = '',
-          color = { fg = colors.mauve, gui = 'bold' },
         }
         
         ins_right {
