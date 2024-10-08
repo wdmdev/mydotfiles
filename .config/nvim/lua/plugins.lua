@@ -5,6 +5,8 @@ return {
             require('plugins.lsp.latex').setup()
             require('plugins.lsp.rust').setup()
             require('plugins.lsp.python').setup()
+            require('plugins.lsp.ruff').setup()
+            require('plugins.lsp.markdown').setup()
         end
     },
     {
